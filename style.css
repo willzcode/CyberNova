@@ -20,7 +20,7 @@ html {
 
 body {
   background-color: var(--clr-white);
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-container {
@@ -32,8 +32,9 @@ body {
 
 nav {
   width: 90%;
-  /* border: 1px solid; */
-  margin: 1.5rem auto;
+  margin: 0 auto;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -53,7 +54,6 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--clr-main-black);
-  font-weight: 500;
   font-size: 1rem;
 }
 
@@ -63,4 +63,5 @@ nav a:hover {
 
 nav .active {
   color: var(--clr-main-blue);
+  font-weight: 500;
 }
