@@ -26,7 +26,8 @@ body {
 .nav-container {
   width: 100%;
   border-bottom: 1px solid var(--clr-main-blue);
-  position: static;
+  background-color: var(--clr-white);
+  position: fixed;
   top: 0;
 }
 
@@ -58,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--clr-main-blue);
+  color: var(--clr-main-blue);
 }
 
 nav .active {
