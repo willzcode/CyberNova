@@ -55,7 +55,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--clr-main-black);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
