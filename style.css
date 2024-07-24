@@ -66,3 +66,9 @@ nav .active {
   color: var(--clr-main-blue);
   font-weight: 500;
 }
+
+@media(max-width: 900px){
+ nav ul {
+  display: none;
+ }
+}
