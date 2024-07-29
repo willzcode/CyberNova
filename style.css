@@ -42,7 +42,6 @@ nav {
 
 .logo h1 {
   color: var(--clr-main-blue);
-  /* font-size: 2rem; */
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
@@ -86,17 +85,14 @@ nav .active {
   margin: 5rem auto 0 auto;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid ; */
 }
 
 .hero-text-container {
   width: 50%;
   margin-top: 6rem;
-  /* border: 1px solid; */
 }
 
 .hero-text-container h1 {
-  /* font-size: 3.5rem; */
   font-size: clamp(0.5rem, 10vw, 3.5rem);
   color: var(--clr-main-black);
   line-height: 4.5rem;
@@ -130,7 +126,6 @@ nav .active {
 .hero-image {
   width: 50%;
   margin-top: 3rem;
-  /* border: 1px solid; */
   display: flex;
   justify-content: flex-end;
 }
