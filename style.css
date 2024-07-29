@@ -42,7 +42,21 @@ nav {
 
 .logo h1 {
   color: var(--clr-main-blue);
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+nav .menu-bar {
+  display: none;
+  justify-content: end;
+  position: absolute;
+  right: 0;
+  padding-right: 1.3rem;
+  padding-top: 0.25rem;
+}
+
+nav .menu-bar img {
+  width: 30px;
 }
 
 nav ul {
@@ -82,7 +96,8 @@ nav .active {
 }
 
 .hero-text-container h1 {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
+  font-size: clamp(0.5rem, 10vw, 3.5rem);
   color: var(--clr-main-black);
   line-height: 4.5rem;
 }
@@ -96,6 +111,7 @@ nav .active {
   color: var(--clr-main-black);
   margin-top: 1.5rem;
   margin-bottom: 3rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .hero-cta-btn a {
@@ -124,9 +140,18 @@ nav .active {
   max-width: 500px;
 }
 
+@media(max-width: 700px){
+  .hero-text-container h1 {
+    line-height: 1.2;
+  }
+}
+
 @media (max-width: 900px) {
   nav ul {
     display: none;
+  }
+  nav .menu-bar {
+    display: flex;
   }
 }
 
