@@ -135,7 +135,7 @@ nav .active {
   max-width: 500px;
 }
 
-@media(max-width: 700px){
+@media (max-width: 700px) {
   .hero-text-container h1 {
     line-height: 1.2;
   }
