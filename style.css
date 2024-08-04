@@ -68,7 +68,8 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--clr-main-black);
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 450;
 }
 
 nav a:hover {
@@ -107,7 +108,7 @@ nav .active {
   color: var(--clr-main-black);
   margin-top: 1.5rem;
   margin-bottom: 3rem;
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  /* font-size: clamp(0.9rem, 2vw, 1rem); */
 }
 
 .hero-cta-btn a {
