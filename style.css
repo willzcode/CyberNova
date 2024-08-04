@@ -11,7 +11,7 @@
   --clr-main-blue: #0056d2;
   --clr-deep-blue: #002dc0;
   --clr-white: #fff;
-  --clr-main-black: #000;
+  --clr-main-black: #030303;
 }
 
 html {
@@ -68,8 +68,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--clr-main-black);
-  font-size: 1rem;
-  font-weight: 450;
+  font-size: 0.9rem;
 }
 
 nav a:hover {
@@ -89,8 +88,8 @@ nav .active {
 }
 
 .hero-text-container {
-  width: 50%;
-  margin-top: 6rem;
+  width: 60%;
+  margin-top: 4rem;
 }
 
 .hero-text-container h1 {
@@ -103,17 +102,22 @@ nav .active {
   color: var(--clr-main-blue);
 }
 
+.hero-text-container span:first-child {
+  color: var(--clr-main-black);
+  display: block;
+}
+
 .hero-text-container p {
-  width: 85%;
+  width: 75%;
   color: var(--clr-main-black);
   margin-top: 1.5rem;
   margin-bottom: 3rem;
-  /* font-size: clamp(0.9rem, 2vw, 1rem); */
+  font-size: 0.9rem;
 }
 
 .hero-cta-btn a {
   color: var(--clr-main-black);
-  padding: 1.2rem;
+  padding: 1rem 1.2rem;
   background-color: #0056d2;
   border-radius: 5px;
   text-decoration: none;
@@ -125,15 +129,15 @@ nav .active {
 }
 
 .hero-image {
-  width: 50%;
-  margin-top: 3rem;
+  width: 40%;
+  margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 @media (max-width: 700px) {
@@ -159,6 +163,9 @@ nav .active {
     width: 100%;
     text-align: center;
   }
+  .hero-text-container h1 {
+    padding-top: 3rem;
+  }
   .hero-text-container p {
     width: 80%;
     margin-left: auto;
@@ -167,8 +174,7 @@ nav .active {
   .hero-image {
     margin-left: auto;
     margin-right: auto;
-  }
-  .hero-image {
+    margin-top: 2rem;
     min-width: 300px;
   }
 }
