@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  background-color: var(--clr-white);
   font-family: "Poppins", sans-serif;
+  background-color: var(--clr-white);
 }
 
 .nav-container {
@@ -34,8 +34,8 @@ body {
 nav {
   width: 90%;
   margin: 0 auto;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -68,7 +68,8 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--clr-main-black);
-  font-size: 0.9rem;
+  font-size: 1.08rem;
+  font-weight: 400;
 }
 
 nav a:hover {
@@ -77,19 +78,21 @@ nav a:hover {
 
 nav .active {
   color: var(--clr-main-blue);
-  font-weight: 500;
 }
 
 .hero-container {
   width: 90%;
-  margin: 5rem auto 0 auto;
+  margin: 7.8rem auto 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
 }
 
 .hero-text-container {
   width: 60%;
-  margin-top: 4rem;
+  border: 1px solid;
+  padding-bottom: 2rem;
 }
 
 .hero-text-container h1 {
@@ -108,17 +111,17 @@ nav .active {
 }
 
 .hero-text-container p {
-  width: 75%;
+  width: 70%;
   color: var(--clr-main-black);
   margin-top: 1.5rem;
   margin-bottom: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .hero-cta-btn a {
   color: var(--clr-main-black);
-  padding: 1rem 1.2rem;
-  background-color: #0056d2;
+  padding: 1.2rem;
+  background-color: var(--clr-main-blue);
   border-radius: 5px;
   text-decoration: none;
   color: var(--clr-white);
@@ -130,19 +133,58 @@ nav .active {
 
 .hero-image {
   width: 40%;
-  margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
+  border: 1px solid;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
+}
+
+.achieve-container {
+  background-color: var(--clr-main-blue);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.achieve-container h2 {
+  font-size: 2.2rem;
+  color: var(--clr-main-black);
+}
+
+.achieve-text-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-1,
+.text-2 {
+  display: flex;
+}
+
+.achieve-text-container span {
+  color: var(--clr-white);
+  padding-top: 0.8rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 700px) {
   .hero-text-container h1 {
     line-height: 1.2;
+  }
+
+  .achieve-text-container {
+    display: block;
+  }
+  .text-1,
+  .text-2 {
+    justify-content: center;
   }
 }
 
@@ -158,13 +200,11 @@ nav .active {
 @media (max-width: 1050px) {
   .hero-container {
     display: block;
+    margin-top: 10rem;
   }
   .hero-text-container {
     width: 100%;
     text-align: center;
-  }
-  .hero-text-container h1 {
-    padding-top: 3rem;
   }
   .hero-text-container p {
     width: 80%;
@@ -175,6 +215,6 @@ nav .active {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    min-width: 300px;
+    min-width: 350px;
   }
 }
