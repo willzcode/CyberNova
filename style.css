@@ -110,7 +110,8 @@ nav .active {
 }
 
 .hero-text-container p {
-  width: 62%;
+  width: 72%;
+  max-width: 620px;
   color: var(--clr-light-black);
   margin-top: 1.5rem;
   margin-bottom: 3rem;
@@ -167,7 +168,7 @@ nav .active {
 
 .achieve-text-container span {
   color: var(--clr-white);
-  padding-top: 0.6rem;
+  padding-top: 0.75rem;
   padding-left: 0.5rem;
   font-size: 1.2rem;
 }
@@ -206,7 +207,7 @@ nav .active {
 .service-text-container p {
   color: var(--clr-light-black);
   padding-top: 0.2rem;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
 }
 
 .point-container {
@@ -319,7 +320,7 @@ nav .active {
 .about-text-container p {
   margin: 2rem 0 4rem 0;
   width: 75%;
-  font-size: 0.96rem;
+  font-size: 1rem;
   color: var(--clr-light-black);
   line-height: 1.8;
 }
@@ -352,6 +353,70 @@ nav .active {
   display: flex;
   justify-content: space-between;
   margin: 0 auto 8rem auto;
+}
+
+.testimonies-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.testimonies-container h2 {
+  font-size: clamp(0.5rem, 10vw, 3rem);
+  text-align: center;
+  margin: 0 auto 4rem auto;
+  width: 60%;
+}
+
+.comment {
+  width: 310px;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comment .quote-image {
+  width: 20px;
+}
+
+.comment .text-quote {
+  font-size: 1rem;
+  color: var(--clr-light-black);
+  line-height: 1.8;
+  margin: 3rem 0 0 0;
+  min-height: 280px;
+}
+
+.client-profile {
+  display: flex;
+}
+
+.client-profile img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.client-profile span {
+  color: var(--clr-main-black);
+  font-weight: 700;
+}
+
+.client-profile .job {
+  color: var(--clr-light-black);
+  margin: 0;
+  font-size: 0.95rem;
+  margin-top: 0.1rem;
+}
+
+.name-job {
+  margin-left: 1rem;
+}
+
+.comments-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 @media (max-width: 1300px) {
@@ -401,7 +466,7 @@ nav .active {
   .about-image {
     width: 50%;
     min-width: 320px;
-    margin: 4rem auto 0 auto;
+    margin: 4rem auto 4rem auto;
     display: block;
   }
 }
@@ -425,6 +490,9 @@ nav .active {
     margin-right: auto;
     margin-top: 2rem;
     min-width: 320px;
+  }
+  .testimonies-container h2 {
+    width: 100%;
   }
 }
 
