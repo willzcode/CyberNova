@@ -419,6 +419,49 @@ nav .active {
   gap: 1rem;
 }
 
+.get-started-container {
+  background-color: var(--clr-main-blue);
+  padding: 3rem 0;
+}
+
+.get-started-container h2 {
+  font-size: clamp(0.5rem, 10vw, 3rem);
+}
+
+.get-started-container p {
+  color: var(--clr-white);
+  width: 60%;
+  margin-top: 1.5rem;
+  font-size: 0.96rem;
+}
+
+.starting-text-container {
+  width: 50%;
+}
+
+.start-btn a {
+  padding: 0.8rem;
+  background-color: var(--clr-white);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--clr-main-blue);
+  font-weight: 500;
+}
+
+.start-btn {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.starting-body {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
 @media (max-width: 1300px) {
   .service-container {
     display: block;
@@ -468,6 +511,9 @@ nav .active {
     min-width: 320px;
     margin: 4rem auto 4rem auto;
     display: block;
+  }
+  .get-started-container p {
+    width: 100%;
   }
 }
 
@@ -522,6 +568,28 @@ nav .active {
   }
   .text-1,
   .text-2 {
+    justify-content: center;
+  }
+  .starting-body {
+    display: block;
+  }
+  .starting-text-container {
+    width: 100%;
+  }
+
+  .starting-text-container h2 {
+    text-align: center;
+  }
+
+  .starting-text-container p {
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem auto 0 auto;
+  }
+  .start-btn {
+    margin: 3rem auto 0 auto;
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
 }
