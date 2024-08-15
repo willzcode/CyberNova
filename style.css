@@ -22,6 +22,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--clr-white);
+  overflow-x: hidden;
 }
 
 .nav-container {
@@ -46,20 +47,20 @@ nav {
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
-nav .menu-bar {
+.toggle-btn {
   display: none;
-  justify-content: end;
-  position: absolute;
-  right: 0;
-  padding-right: 1.3rem;
-  padding-top: 0.25rem;
+  flex-direction: column;
+  justify-content: center;
 }
 
-nav .menu-bar img {
+.toggle-btn .bar {
   width: 30px;
+  height: 5px;
+  background-color: var(--clr-main-blue);
+  margin: 3px;
 }
 
-nav ul {
+.nav-links {
   list-style-type: none;
   display: flex;
   gap: 4rem;
@@ -77,7 +78,7 @@ nav a:hover {
   color: var(--clr-main-blue);
 }
 
-nav .active {
+nav .open {
   color: var(--clr-main-blue);
 }
 
@@ -1030,12 +1031,32 @@ button:hover {
 }
 
 @media (max-width: 900px) {
-  nav ul {
-    display: none;
+  nav a,
+  nav .open {
+    color: var(--clr-white);
   }
 
-  nav .menu-bar {
+  nav a:hover {
+    color: var(--clr-main-black);
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 11vh;
+    background-color: var(--clr-main-blue);
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in;
+  }
+
+  .toggle-btn {
     display: flex;
+    cursor: pointer;
   }
 
   .plan-title {
@@ -1242,5 +1263,16 @@ button:hover {
 
   .reach-out {
     width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-text-container p {
+    text-align: start;
+  }
+
+  .comment .text-quote {
+    margin: 1rem 0 1.5rem 0;
+    min-height: auto;
   }
 }
