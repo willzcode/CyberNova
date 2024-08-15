@@ -1057,7 +1057,7 @@ button:hover {
     justify-content: flex-start;
     transform: scale(1, 0);
     transform-origin: top;
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
 
   .toggle-nav:checked ~ .nav-links {
@@ -1255,6 +1255,11 @@ button:hover {
     justify-content: center;
   }
 
+  .comment .text-quote {
+    margin: 1rem 0 1.5rem 0;
+    min-height: auto;
+  }
+
   .footer-container p {
     width: 100%;
   }
@@ -1274,16 +1279,5 @@ button:hover {
 
   .reach-out {
     width: 100%;
-  }
-}
-
-@media (max-width: 450px) {
-  .about-text-container p {
-    text-align: start;
-  }
-
-  .comment .text-quote {
-    margin: 1rem 0 1.5rem 0;
-    min-height: auto;
   }
 }
