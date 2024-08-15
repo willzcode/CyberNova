@@ -47,19 +47,6 @@ nav {
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
-.toggle-btn {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.toggle-btn .bar {
-  width: 30px;
-  height: 5px;
-  background-color: var(--clr-main-blue);
-  margin: 3px;
-}
-
 .nav-links {
   list-style-type: none;
   display: flex;
@@ -80,6 +67,24 @@ nav a:hover {
 
 nav .open {
   color: var(--clr-main-blue);
+}
+
+.toggle-nav {
+  display: none;
+}
+
+.toggle-label {
+  display: none;
+}
+
+.toggle-label span,
+.toggle-label span::before,
+.toggle-label span::after {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: var(--clr-main-blue);
+  margin: 3px;
 }
 
 .hero-container {
@@ -1041,22 +1046,28 @@ button:hover {
   }
 
   .nav-links {
-    display: none;
     position: absolute;
-    right: 0px;
-    height: 90vh;
-    top: 11vh;
+    right: 0;
+    height: 100vh;
+    top: 4rem;
     background-color: var(--clr-main-blue);
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    transition: 0.5s ease-in;
+    justify-content: flex-start;
+    transform: scale(1, 0);
+    transform-origin: top;
+    padding-top: 2rem;
   }
 
-  .toggle-btn {
+  .toggle-nav:checked ~ .nav-links {
+    transform: scale(1, 1);
+  }
+
+  .toggle-label {
     display: flex;
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .plan-title {
