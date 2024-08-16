@@ -1309,3 +1309,28 @@ button:hover {
     width: 100%;
   }
 }
+
+@media (max-width: 320px) {
+  .hero-image,
+  .service-image,
+  .about-image {
+    min-width: 280px;
+  }
+
+  .intro-image img,
+  .mission-image img,
+  .history-image img,
+  .team-image img {
+    min-width: 280px;
+  }
+
+  .text-1,
+  .text-2 {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}
