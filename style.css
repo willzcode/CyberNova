@@ -1221,6 +1221,16 @@ button:hover {
     line-height: 1.2;
   }
 
+  .hero-text-container p {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .about-text-container p {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+
   .achieve-text-container {
     display: block;
   }
@@ -1258,10 +1268,28 @@ button:hover {
   .comment .text-quote {
     margin: 1rem 0 1.5rem 0;
     min-height: auto;
+    font-size: 0.95rem;
+  }
+
+  .testimonies-container h2 {
+    margin-bottom: 2rem;
+  }
+
+  .main-services .tip {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .intro-text p,
+  .mission-text p,
+  .history-text p,
+  .team-text p {
+    font-size: 0.95rem;
   }
 
   .footer-container p {
     width: 100%;
+    font-size: 0.95rem;
   }
 
   .end-footer {
